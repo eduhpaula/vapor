@@ -20,14 +20,14 @@
     <div id="logo">
     <img src="./public/img/logo.png" alt="Logo"><h3>LOGIN</h3>  
     </div>
-        <input type="email" name="email" placeholder="e-mail" class="campo" required>
+        <input onfocus="removeErrorMessage()" type="email" name="email" placeholder="e-mail" class="campo" required>
         <br>
         <input type="password" name="senha" placeholder="senha" class="campo" required>
         <br>
         <input type="submit" name="enviar" class="botaoenviar" value="Enviar">
 
         <?php if ($error_message != null) { ?>
-            <div class="error-message"><?=$error_message?></div>
+            <div id="error-message-index" class="error-message"><?=$error_message?></div>
         <?php } ?>
     </div>    
 </body>

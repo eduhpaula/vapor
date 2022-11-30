@@ -17,12 +17,12 @@
 
             <form action="cadastrar-plataforma.php" method="post" id="form-novoidioma">
                 <h3>Cadastrar Nova Plataforma:</h3>
-                <input type="text" name="plataforma" placeholder="Nova Plataforma" class="campo" required>
+                <input onfocus="removeErrorMessagePlataforma()" type="text" name="plataforma" placeholder="Nova Plataforma" class="campo" required>
                 <br>
                 <button class="btm-formnovoidioma" type="submit">Salvar</button>
                 
                 <?php if ($error != null) { ?>
-                <div class="error-novoidioma"><?=$error?></div>
+                <div id="error-novaplataforma-js" class="error-novoidioma"><?=$error?></div>
                 <?php } ?>
             </form>
 

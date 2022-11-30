@@ -17,12 +17,12 @@
 
             <form action="cadastrar-idioma.php" method="post" id="form-novoidioma">
                 <h3>Cadastrar Novo Idioma:</h3>
-                <input type="text" name="idioma" placeholder="Novo Idioma" class="campo" required>
+                <input onfocus="removeErrorMessageIdioma()" type="text" name="idioma" placeholder="Novo Idioma" class="campo" required>
                 <br>
                 <button class="btm-formnovoidioma" type="submit">Salvar</button>
 
                 <?php if ($error != null) { ?>
-                <div class="error-novoidioma"><?=$error?></div>
+                <div id="error-novoidioma-js" class="error-novoidioma"><?=$error?></div>
                 <?php } ?>
             </form>
 
