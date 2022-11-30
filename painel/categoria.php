@@ -32,7 +32,7 @@
             <tr>
                 <td><?=$categoria['nome']?></td>
                 <td class="center"><a href="editar-categoria.php?id=<?=$categoria['id']?>">Editar</a></td>
-                <td class="center"><a href="excluir-categoria.php?id=<?=$categoria['id']?>">Excluir</a></td>
+                <td class="center"><a onclick="excluirCategoria(<?=$categoria['id']?>)" href="#">Excluir</a></td>
             </tr>
             <?php } ?>
         </table>
