@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="./public/img/logo.png" type="image/x-icon">
     <title>Painel de Controle - Mensagens</title>
 </head>
 <body>

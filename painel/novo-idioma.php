@@ -4,6 +4,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="shortcut icon" href="./public/img/logo.png" type="image/x-icon">
     <title>Painel de Controle - Novo Idioma</title>
 </head>
 <body>
