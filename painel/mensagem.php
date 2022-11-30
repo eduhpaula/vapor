@@ -31,7 +31,7 @@
                 <td><?=$mensagem['nome']?></td>
                 <td><?=$mensagem['assunto']?></td>
                 <td class="center"><a href="visualizar-mensagem.php?id=<?=$mensagem['id']?>">Visualizar</a></td>
-                <td class="center"><a href="arquivar-mensagem.php?id=<?=$mensagem['id']?>">Arquivar</a></td>    
+                <td class="center"><a onclick="arquivarMensagem(<?=$mensagem['id']?>)" href="#">Arquivar</a></td>    
             </tr>
             <?php } ?>
         </table>

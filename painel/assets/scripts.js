@@ -15,7 +15,7 @@ function excluirIdioma(idIdioma) {
 
 }
 function excluirPlataforma(idPlataforma) {
-    let excluirPlataforma = confirm("Realmente deseja exluir está plataforma?")
+    let excluirPlataforma = confirm("Realmente deseja exluir esta plataforma?")
 
     if (excluirPlataforma == true) {
         window.open("excluir-plataforma.php?id=" + idPlataforma, "_SELF")
@@ -23,10 +23,18 @@ function excluirPlataforma(idPlataforma) {
 
 }
 function excluirCategoria(idCategoria) {
-    let excluirCategoria = confirm("Realmente deseja exluir está categoria?")
+    let excluirCategoria = confirm("Realmente deseja exluir esta categoria?")
 
     if (excluirCategoria == true) {
         window.open("excluir-Categoria.php?id=" + idCategoria, "_SELF")
+    }
+
+}
+function arquivarMensagem(idMensagem) {
+    let arquivarMensagem = confirm("Realmente deseja arquivar esta mensagem?")
+
+    if (arquivarMensagem == true) {
+        window.open("arquivar-mensagem.php?id=" + idMensagem, "_SELF")
     }
 
 }

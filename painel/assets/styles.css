@@ -574,8 +574,6 @@
     padding: 12px;
 }
 #conteudo-dash .btm-novoidioma:hover{
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(27,40,57,0.23573179271708689) 100%);
     transition: 500ms;
     font-size: large;
 }
