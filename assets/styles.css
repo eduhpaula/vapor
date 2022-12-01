@@ -122,6 +122,7 @@
 
 #body-container #content {
     width: calc(100vw - 250px);
+    height: 100px;
     padding: 20px 10px 10px 10px;
     display: flex;
     flex-direction: column;

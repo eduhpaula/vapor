@@ -26,12 +26,16 @@
         <table>
             <tr>
                 <th>Jogo</th>
+                <th class="center">Idiomas</th>
+                <th class="center">Plataformas</th>
                 <th class="center">Editar</th>
                 <th class="center">Excluir</th>
             </tr>
             <?php while($jogo = mysqli_fetch_array($jogos)) {?>
             <tr>
                 <td><?=$jogo['nome']?></td>
+                <td class="center"><a href="editar-idioma-jogo.php?id=<?=$jogo['id']?>">Idiomas</a></td>
+                <td class="center"><a href="editar-plataforma-jogo.php?id=<?=$jogo['id']?>">Plataformas</a></td>
                 <td class="center"><a href="editar-jogo.php?id=<?=$jogo['id']?>">Editar</a></td>
                 <td class="center"><a href="excluir-jogo.php?id=<?=$jogo['id']?>">Excluir</a></td>
             </tr>
