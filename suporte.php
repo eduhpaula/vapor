@@ -13,7 +13,7 @@
                 <div id="formulario">
                 <form action="suporte_enviar.php" method="post" autocomplete="off">
                     <label for="nome" class="legenda">Nome:* </label><br>
-                    <input type="text" class="campo" name="nome" required>
+                    <input onfocus="removeSucessMessageSuporte()" type="text" class="campo" name="nome" required>
                     <br>
                     <label for="e-mail" class="legenda">E-mail:* </label><br>
                     <input type="email" class="campo" name="email" required>
@@ -36,7 +36,7 @@
                 </form>
             </div>
             <?php if ($enviado != null) { ?>
-            <div class="enviado-message"><?=$enviado?></div>
+            <div id="success-message-suporte" class="enviado-message"><?=$enviado?></div>
             <?php } ?>     
             <img class="img-feedback" src="./public/images/feedback.png" alt="Feedback">    
             </div>

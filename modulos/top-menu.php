@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./assets/global.css">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/styles.css">
+    <script src="assets/scripts.js"></script>
     <title>Vapor - <?php echo $titulo_pagina; ?></title>
     <div id="header-container">
         <div id="header">
