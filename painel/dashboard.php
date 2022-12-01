@@ -9,8 +9,10 @@
         <?php require('./modulos/top-dash.php') ?>
         <?php require('./modulos/side-dash.php') ?>
     </div>
-    <div id="conteudo-dash">
-        
+    <div id="conteudo-dash-d">
+        <div id="imagemdashboard">
+            <img src="./public/img/dashboard.png" alt="DashBoard">
+        </div>
     </div>
 </body>
 </html>

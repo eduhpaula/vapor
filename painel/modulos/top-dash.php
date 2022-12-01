@@ -4,7 +4,7 @@
 
 <div id="topdash">
             <h3>Dashboard</h3>
-            <h4>Olá, Eduardo</h4>   
+            <h4>Olá, <?=$administrador['nome']?></h4>   
 </div>
 
 <head>
