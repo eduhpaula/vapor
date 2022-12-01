@@ -1,7 +1,7 @@
-function removeSucessMessageSuporte() {
-    let errorMessage = document.getElementById("success-message-suporte")
+function removerElementoPorId(idElemento) {
+    let elemento = document.getElementById(idElemento)
 
-    if (errorMessage != null) {
-        errorMessage.remove()
+    if (elemento != null) {
+        elemento.remove()
     }
 }

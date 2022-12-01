@@ -13,7 +13,7 @@
                 <div id="formulario">
                 <form action="suporte_enviar.php" method="post" autocomplete="off">
                     <label for="nome" class="legenda">Nome:* </label><br>
-                    <input onfocus="removeSucessMessageSuporte()" type="text" class="campo" name="nome" required>
+                    <input onfocus="removerElementoPorId('success-message-suporte')" type="text" class="campo" name="nome" required>
                     <br>
                     <label for="e-mail" class="legenda">E-mail:* </label><br>
                     <input type="email" class="campo" name="email" required>

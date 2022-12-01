@@ -18,7 +18,7 @@
 
             <form action="cadastrar-categoria.php" method="post" id="form-novoidioma">
                 <h3>Cadastrar Nova Categoria:</h3>
-                <input onfocus="removeErrorMessageCategoria()" type="text" name="categoria" placeholder="Nova Categoria" class="campo" required>
+                <input onfocus="removerElementoPorId('error-novacategoria-js')" type="text" name="categoria" placeholder="Nova Categoria" class="campo" required>
                 <br>
                 <button class="btm-formnovoidioma" type="submit">Salvar</button>
 

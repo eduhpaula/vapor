@@ -20,7 +20,7 @@
     <div id="logo">
     <img src="./public/img/logo.png" alt="Logo"><h3>LOGIN</h3>  
     </div>
-        <input onfocus="removeErrorMessage()" type="email" name="email" placeholder="e-mail" class="campo" required>
+        <input onfocus="removerElementoPorId('error-message-index')" type="email" name="email" placeholder="e-mail" class="campo" required>
         <br>
         <input type="password" name="senha" placeholder="senha" class="campo" required>
         <br>

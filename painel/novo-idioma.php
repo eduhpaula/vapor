@@ -18,7 +18,7 @@
 
             <form action="cadastrar-idioma.php" method="post" id="form-novoidioma">
                 <h3>Cadastrar Novo Idioma:</h3>
-                <input onfocus="removeErrorMessageIdioma()" onfocusout="formataCPF(this.value)" type="text" name="idioma" id="idioma_input" placeholder="Novo Idioma" class="campo" required>
+                <input onfocus="removerElementoPorId('error-novoidioma-js')" onfocusout="formataCPF(this.value)" type="text" name="idioma" id="idioma_input" placeholder="Novo Idioma" class="campo" required>
                 <br>
                 <button class="btm-formnovoidioma" type="submit">Salvar</button>
 

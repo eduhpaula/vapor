@@ -39,33 +39,11 @@ function arquivarMensagem(idMensagem) {
 
 }
 
+function removerElementoPorId(idElemento) {
+    let elemento = document.getElementById(idElemento)
 
-function removeErrorMessage() {
-    let errorMessage = document.getElementById("error-message-index")
-
-    if (errorMessage != null) {
-        errorMessage.remove()
-    }
-}
-function removeErrorMessageCategoria() {
-    let errorMessage = document.getElementById("error-novacategoria-js")
-
-    if (errorMessage != null) {
-        errorMessage.remove()
-    }
-}
-function removeErrorMessageIdioma() {
-    let errorMessage = document.getElementById("error-novoidioma-js")
-
-    if (errorMessage != null) {
-        errorMessage.remove()
-    }
-}
-function removeErrorMessagePlataforma() {
-    let errorMessage = document.getElementById("error-novaplataforma-js")
-
-    if (errorMessage != null) {
-        errorMessage.remove()
+    if (elemento != null) {
+        elemento.remove()
     }
 }
 
