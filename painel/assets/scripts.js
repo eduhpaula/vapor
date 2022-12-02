@@ -52,6 +52,18 @@ function obterHoraAtual() {
     let hora = data.getHours()
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
+    
+    let dia = data.getDate()
+    let mes = data.getMonth()
+    let ano = data.getFullYear()
+  
+    if (mes < 10){
+      mes = "0" + mes
+    }
+  
+    if (dia < 10){
+      dia = "0" + dia
+    }
   
     if (hora < 10){
       hora = "0" + hora
@@ -65,13 +77,15 @@ function obterHoraAtual() {
       segundos = "0" + segundos
     }
   
-    let dataAtual = hora + ":" + minutos + ":" + segundos
+    let dataAtual = dia + "/" + mes + "/" + ano + " - " + hora + ":" + minutos + ":" + segundos
   
     return dataAtual
   }
   
   let dataEHora = obterHoraAtual()
   console.log(dataEHora)
+
+  
 
 
 
