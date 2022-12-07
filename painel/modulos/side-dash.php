@@ -1,3 +1,6 @@
+<head>
+    <script src="./assets/scripts.js"></script>
+</head>
 
         <div id="sidedash">
             <a href="dashboard.php">

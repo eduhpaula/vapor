@@ -13,8 +13,8 @@
 </head>
 
 <div id="topdash">
-            <h3>Dashboard</h3>
-            <h4>Olá, <?=$administrador['nome']?> - <span id="clock"></span></h4>
+            <h3 id="corh3">Dashboard</h3>
+            <h4 id="corh4">Olá, <?=$administrador['nome']?> - <span id="clock"></span></h4>
             
 </div>
 
