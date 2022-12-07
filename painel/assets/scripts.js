@@ -56,6 +56,10 @@ function obterDataHoraAtual() {
     let mes = data.getMonth()+1
     let ano = data.getFullYear()
     
+    if(dia <= 9) {
+        dia = "0" + dia
+      }
+
     if(horas <= 9) {
       horas = "0" + hora
     }
