@@ -24,7 +24,7 @@
 
             <form action="atualizar-categoria.php" method="post" id="form-novoidioma">
                 <h3>Editar Categoria:</h3>
-                <input value="<?=$categoria['nome']?>" type="text" name="categoria" placeholder="Atualizar Categoria" class="campo" required>
+                <input value="<?=$categoria['nome']?>" type="text" name="categoria" onkeyup="transformar_texto_maiusculo(this)" placeholder="Atualizar Categoria" class="campo" required>
                 <input value="<?=$id_categoria?>" name="id" type="hidden">
                 <br>
                 <button class="btm-formnovoidioma" type="submit">Atualizar</button>

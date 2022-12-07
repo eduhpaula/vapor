@@ -47,43 +47,54 @@ function removerElementoPorId(idElemento) {
     }
 }
 
-function obterHoraAtual() {
-    let data = new Date()
-    let hora = data.getHours()
+function obterDataHoraAtual() {
+    const data = new Date()
+    let horas = data.getHours()
     let minutos = data.getMinutes()
     let segundos = data.getSeconds()
-    
-    let dia = data.getDate()
-    let mes = data.getMonth()
+    let dia = data.getDate() 
+    let mes = data.getMonth()+1
     let ano = data.getFullYear()
-  
-    if (mes < 10){
-      mes = "0" + mes
+    
+    if(horas <= 9) {
+      horas = "0" + hora
     }
   
-    if (dia < 10){
-      dia = "0" + dia
-    }
-  
-    if (hora < 10){
-      hora = "0" + hora
-    }
-  
-    if (minutos < 10){
+    if(minutos <= 9) {
       minutos = "0" + minutos
     }
   
-    if (segundos < 10){
+    if(segundos <= 9) {
       segundos = "0" + segundos
     }
   
-    let dataAtual = dia + "/" + mes + "/" + ano + " - " + hora + ":" + minutos + ":" + segundos
+  
+    let dataAtual = dia + "/" + mes + "/" + ano + " - " + horas + ":" + minutos + ":" + segundos; 
+  
   
     return dataAtual
-  }
+}
   
-  let dataEHora = obterHoraAtual()
-  console.log(dataEHora)
+function updateClock() {
+
+    const clock = document.getElementById('clock')
+    clock.innerHTML = obterDataHoraAtual()
+
+    setInterval(function () {
+      clock.innerHTML = obterDataHoraAtual()
+      1000
+    })
+
+}
+  
+function transformar_texto_maiusculo(elemento){
+    let valor_que_usuario_digitou = elemento.value
+    elemento.value = (valor_que_usuario_digitou.toUpperCase())
+}
+
+function primeira_letra_maiuscula(elemento){
+    elemento.value = elemento.value[0].toUpperCase() + elemento.value.slice(1).toLowerCase()
+}
 
   
 

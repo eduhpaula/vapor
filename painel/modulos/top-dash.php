@@ -1,13 +1,6 @@
 <?php require("./modulos/conexao.php"); ?>
 <?php require('./modulos/autenticacao.php');?> 
 
-
-<div id="topdash">
-            <h3>Dashboard</h3>
-            <h4>Olá, <?=$administrador['nome']?></h4>
-            <div id="data_hora"></div>
-</div>
-
 <head>
 <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,5 +9,17 @@
     <link rel="stylesheet" href="./assets/global.css">
     <link rel="stylesheet" href="./assets/normalize.css">
     <link rel="stylesheet" href="./assets/styles.css">
-    <script src="assets/scripts.js"></script>
+    <script src="./assets/scripts.js"></script>
 </head>
+
+<div id="topdash">
+            <h3>Dashboard</h3>
+            <h4>Olá, <?=$administrador['nome']?> - <span id="clock"></span></h4>
+            
+</div>
+
+<script>
+    updateClock()
+    iniciar_mudanca_de_cor()
+</script>
+

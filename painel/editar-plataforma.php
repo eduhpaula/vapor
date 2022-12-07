@@ -24,7 +24,7 @@
 
             <form action="atualizar-plataforma.php" method="post" id="form-novoidioma">
                 <h3>Editar plataforma:</h3>
-                <input value="<?=$plataforma['nome']?>" type="text" name="plataforma" placeholder="Atualizar Plataforma" class="campo" required>
+                <input value="<?=$plataforma['nome']?>" onkeyup="primeira_letra_maiuscula(this)" type="text" name="plataforma" placeholder="Atualizar Plataforma" class="campo" required>
                 <input value="<?=$id_plataforma?>" name="id" type="hidden">
                 <br>
                 <button class="btm-formnovoidioma" type="submit">Atualizar</button>

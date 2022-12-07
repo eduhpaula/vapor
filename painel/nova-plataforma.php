@@ -18,7 +18,7 @@
 
             <form action="cadastrar-plataforma.php" method="post" id="form-novoidioma">
                 <h3>Cadastrar Nova Plataforma:</h3>
-                <input onfocus="removerElementoPorId('error-novaplataforma-js')" type="text" name="plataforma" placeholder="Nova Plataforma" class="campo" required>
+                <input onfocus="removerElementoPorId('error-novaplataforma-js')" onkeyup="primeira_letra_maiuscula(this)" type="text" name="plataforma" placeholder="Nova Plataforma" class="campo" required>
                 <br>
                 <button class="btm-formnovoidioma" type="submit">Salvar</button>
                 

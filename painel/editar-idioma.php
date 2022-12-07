@@ -24,7 +24,7 @@
 
             <form action="atualizar-idioma.php" method="post" id="form-novoidioma">
                 <h3>Editar idioma:</h3>
-                <input value="<?=$idioma['nome']?>" type="text" name="idioma" placeholder="Atualizar Idioma" class="campo" required>
+                <input value="<?=$idioma['nome']?>" onkeyup="primeira_letra_maiuscula(this)" type="text" name="idioma" placeholder="Atualizar Idioma" class="campo" required>
                 <input value="<?=$id_idioma?>" name="id" type="hidden">
                 <br>
                 <button class="btm-formnovoidioma" type="submit">Atualizar</button>
