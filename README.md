@@ -29,7 +29,7 @@ Pronto, se você seguiu passo a passo, já conseguira iniciar na web.
 E tá na mão! Fique a vontade para visualizar, modificar, acrescentar!
 
 ## Em Breve
-Pensando no futuro, a ideia é automatizar ainda mais nas próximas versões, criar soluções mais ageis, como chats de suporte, e algumas modificações estéticas mais limpas com Java Script
+Pensando no futuro, a ideia é automatizar ainda mais nas próximas versões, criar soluções mais ageis, como chats de suporte, e algumas modificações estéticas mais limpas com Java Script e CSS3.
 
 ## Autores
 <table>
