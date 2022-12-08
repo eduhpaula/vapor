@@ -1,4 +1,7 @@
 # Plataforma de Jogos - Vapor
+
+<img src="https://s4.aconvert.com/convert/p3r68-cdx67/a6wh0-fb59i.jpg" alt="Plataforma Vapor">
+
   Oi, a plataforma Vapor foi desenvolvida em sala (curso de Técnico em Informática no Senac, em Piracicaba) com a orientação do professor **Matheus Barros** (**[@barros42](https://github.com/Barros42)**).
   O intuito deste projeto é por em prática todos os recursos que aprendemos, e assim, utilizando como base uma plataforma de jogos, dando inicio ao projeto Vapor!
 
